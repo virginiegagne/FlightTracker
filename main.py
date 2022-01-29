@@ -1,5 +1,5 @@
 from api import utils
-
+from api import fetcher
 
 
 def main_wrapper():
@@ -8,10 +8,8 @@ def main_wrapper():
 
 
     #Code here
-    utils.solid_example_1(example_param_1 = 'hi', example_param_2 = 2)
-    utils.solid_example_2()
-    utils.solid_example_3()
-
+    fetcher.states_accessor()
+    fetcher.tracks_accessor()
 
     print("This is the end of our python project")
 
